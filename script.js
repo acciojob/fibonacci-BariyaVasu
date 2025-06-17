@@ -1,9 +1,9 @@
 function fibonacci(num) {
-  const sequence = [0, 1];
-  for (let i = 2; i < nums; i++) {
-    sequence[i] = sequence[i - 1] + sequence[i - 2];
-  }
-  return sequence.slice(0, nums);
+ // [0 0 1 2 3]
+	if(num <= 0) return 0;
+	if(num == 1) return 1;
+	
+	return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
 console.log(fibonacci(10));
